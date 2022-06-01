@@ -22,7 +22,6 @@
 //  and the second operand (the top of the stack) is in a register
 //------------------------------------------------------------------------------------------------------
 
-
 #include "m3_math_utils.h"
 #include "m3_compile.h"
 #include "m3_env.h"
