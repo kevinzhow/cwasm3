@@ -94,11 +94,11 @@
 // logging --------------------------------------------------------------------
 
 # ifndef d_m3LogParse
-#   define d_m3LogParse                         0       // .wasm binary decoding info
+#   define d_m3LogParse                         1       // .wasm binary decoding info
 # endif
 
 # ifndef d_m3LogModule
-#   define d_m3LogModule                        0       // wasm module info
+#   define d_m3LogModule                        1       // wasm module info
 # endif
 
 # ifndef d_m3LogCompile
@@ -118,7 +118,7 @@
 # endif
 
 # ifndef d_m3LogRuntime
-#   define d_m3LogRuntime                       0       // higher-level runtime information
+#   define d_m3LogRuntime                       1       // higher-level runtime information
 # endif
 
 # ifndef d_m3LogNativeStack
