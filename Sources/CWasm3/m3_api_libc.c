@@ -180,12 +180,7 @@ m3ApiRawFunction(m3_libc_clock_ms)
 {
     m3ApiReturnType (uint32_t)
 #ifdef CLOCKS_PER_SEC
-    uint32_t clock_divider = CLOCKS_PER_SEC/1000;
-    if (clock_divider != 0) {
-        m3ApiReturn(clock() / clock_divider);
-    } else {
-        m3ApiReturn(clock());
-    }
+    m3ApiReturn(clock() / (CLOCKS_PER_SEC/1000));
 #else
     m3ApiReturn(clock());
 #endif
